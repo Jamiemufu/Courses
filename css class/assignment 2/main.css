@@ -1,0 +1,17 @@
+div {
+	background: yellow;
+	border: 2px solid black;
+	margin: 15px 5px 20px 10px;
+	padding: 5px 15px;
+	display: inline-block;
+}
+
+.div-1 {
+	height: 300px;
+	width: 50%;
+	visibility: hidden;
+}
+
+div:last-child:hover {
+	background: green;
+}
