@@ -52,12 +52,30 @@ body {
     border-radius: 4px;
 }
 
+.highlighted--list {
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 15px;
+}
+
 .main-header {
     width: 100%;
     background: #2ddf5c;
     padding: 8px 16px;
 }
 
+.plan > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 15px;
+}
+
+.plan > ul > li {
+    padding: 3px;
+}
 .main-header > div {
     display:inline-block;
     text-align: left;
