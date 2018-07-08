@@ -76,12 +76,13 @@ body {
 .plan > ul > li {
     padding: 3px;
 }
+
 .main-header > div {
     display:inline-block;
     text-align: left;
 }
 
-.brand {
+.main-header__brand {
     text-decoration: none;
     font-weight: bold;
     font-size: 22px;
