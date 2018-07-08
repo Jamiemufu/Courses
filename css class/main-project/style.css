@@ -34,7 +34,24 @@ body {
     display: inline-block;
     width: 30%;
     vertical-align: middle;
+    
 }
+
+.plan--highlighted {
+    background: darkcyan;
+    box-shadow: black 3px 3px 3px 3px;
+}
+
+.plan--annotation {
+    margin: auto;
+    width: 75%;
+    background: white;
+    color: darkcyan;
+    padding: 5px 10px;
+    box-shadow: 2px 2px 2px 2px black;
+    border-radius: 4px;
+}
+
 .main-header {
     width: 100%;
     background: #2ddf5c;
