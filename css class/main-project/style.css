@@ -95,6 +95,35 @@ body {
     outline: none;
 }
 
+#key-features {
+    background: #ff1b68;
+    margin-top: 20px;
+    padding: 16px;
+}
+
+#key-features .section-title {
+    color: white;
+    margin:  30px;
+}
+
+#key-features > ul {
+    list-style:  none;
+    display:  inline-block;
+    color:  white;
+    width: 30%;
+    text-align: center;
+    vertical-align: top;
+}
+
+.key-feature__image {
+    margin: auto;
+    height: 128px;
+    width: 128px;
+    background: #ffcede;
+    border-radius: 50%;
+    border: 2px solid #424242;
+}
+
 /* h1 {
     font-family: sans-serif;
 } */
