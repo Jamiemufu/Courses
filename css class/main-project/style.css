@@ -62,8 +62,16 @@ body {
 
 .main-header {
     width: 100%;
-    background: #2ddf5c;
+    background: #0e4f1f;
     padding: 8px 16px;
+}
+
+.plan__title {
+    color:  #2ddf5c;;
+}
+
+.plan__price {
+    color: #ccc
 }
 
 .plan > ul {
