@@ -15,5 +15,17 @@
 .section-header {
 	font-family:  sans-serif;
 	color: black;
+	text-shadow: 3px 3px 3px darkgray;
 	font-size: 20px;
+}
+
+.section-header__sub {
+	color: black;
+	text-shadow: 1px 1px 1px darkgray;
+}
+
+.package p {
+	background: white;
+	padding: 5px 10px;
+	color:  black;
 }
