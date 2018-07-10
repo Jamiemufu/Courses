@@ -1,4 +1,8 @@
 
+main {
+	padding-top: 30px;
+}
+
 .package {
 	display: block;
 	margin-top: 20px;
@@ -6,13 +10,14 @@
 	background: #DAFCDE;
 	border: 3px solid #0F370E;
 	border-left: none;
-	width: 60%;
+	width: 80%;
 	padding: 20px;
 	font-family: 'Montserrat', sans-serif;
 }
 
 .package a {
 	text-decoration: none;
+	display: block;
 }
 
 .package a:hover,
@@ -20,14 +25,14 @@
 	text-decoration: none;
 }
 
-.section-header {
+.package-header {
 	font-family:  sans-serif;
 	color: black;
 	font-weight: bold;
 	font-size: 18px;
 }
 
-.section-header__sub {
+.package-header__sub {
 	color: #889890;
 	font-weight: bold;
 	font-size: 18px;
@@ -41,15 +46,16 @@ section p {
 	border: 1px solid #0F370E;
 }
 
-.package__free {
+#free_package {
 	background: #ECFAEE;
+	float: right;
 }
 
-.package__premium  {
+#premium_package  {
 	background: #275730;
 	border: none;
 }
 
-.package__premium  h1{
+#premium_package  h1{
 	color: white;
 }
