@@ -49,11 +49,13 @@ main {
 .package-badge {
 	position: absolute;
 	top: 0;
-	left: 0;
-	margin: 20px;
-	left: 70%;
-	top: 10%;
+	right: 0;
+	margin: 30px;
 	color: black;
+	color: white;
+	font-size: 12px;
+	background: #ff5454;
+	padding: 8px;
 }
 
 .package-header__sub {
