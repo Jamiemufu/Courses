@@ -15,6 +15,12 @@ main {
 	font-family: 'Montserrat', sans-serif;
 }
 
+.package:hover,
+.package:focus {
+	box-shadow: 1px 1px 1px darkgray;
+	border-color: pink !important;
+}
+
 .package a {
 	text-decoration: none;
 	display: block;
@@ -46,14 +52,20 @@ section p {
 	border: 1px solid #0F370E;
 }
 
+.clearfix {
+	clear: both;
+}
+
 #free_package {
 	background: #ECFAEE;
 	float: right;
+	border-right: none;
+	text-align: right;
+	border-left: 3px solid #0F370E;
 }
 
 #premium_package  {
 	background: #275730;
-	border: none;
 }
 
 #premium_package  h1{
