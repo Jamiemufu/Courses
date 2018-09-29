@@ -1,0 +1,10 @@
+#container {
+    margin: 0 auto;
+    background: grey;
+    width: 360px;
+  
+}
+
+span {
+    display: none;
+}
