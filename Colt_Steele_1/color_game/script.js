@@ -12,14 +12,14 @@ var hardBtn = document.querySelector('#hard');
 var numberOfSquares = 6;
 
 
-easyBtn.addEventListener("click", function() {
+easyBtn.addEventListener("click", function () {
     easyBtn.classList.add("selected");
     hardBtn.classList.remove("selected");
     numberOfSquares = 3;
     colors = generateRandomColors(numberOfSquares);
     pickedColor = pickColor();
     colorDisplay.textContent = pickedColor;
-    for(var i = 0; i < squares.length; i++) {
+    for (var i = 0; i < squares.length; i++) {
         //if next colors (should be 3)
         if (colors[i]) {
             squares[i].style.backgroundColor = colors[i];
@@ -30,7 +30,7 @@ easyBtn.addEventListener("click", function() {
     }
 });
 
-hardBtn.addEventListener("click", function() {
+hardBtn.addEventListener("click", function () {
     hardBtn.classList.add("selected");
     easyBtn.classList.remove("selected");
     numberOfSquares = 6;
@@ -39,13 +39,13 @@ hardBtn.addEventListener("click", function() {
     colorDisplay.textContent = pickedColor;
     for (var i = 0; i < squares.length; i++) {
         //if next colors (should be 3)
-       squares[i].style.backgroundColor = colors[i];
-       squares[i].style.display = "block";
+        squares[i].style.backgroundColor = colors[i];
+        squares[i].style.display = "block";
     }
 });
 
 
-resetButton.addEventListener("click", function() {
+resetButton.addEventListener("click", function () {
     //generate new colors
     colors = generateRandomColors(numberOfSquares);
     //pick a new random color
@@ -78,7 +78,7 @@ function generateSquareColor() {
             }
             else {
                 this.style.backgroundColor = "#232323";
-                messageDisplay.textContent = "Try Again!";   
+                messageDisplay.textContent = "Try Again!";
             }
         });
     }
@@ -105,7 +105,7 @@ function generateRandomColors(num) {
     for (var i = 0; i < num; i++) {
         arr.push(randomColor());
         //get random color and push into array
-        
+
     }
     return arr;
 }
