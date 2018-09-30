@@ -1,10 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    font-family: Roboto;
+    background: #70e1f5;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-gradient(linear, left top, right top, from(#ffd194), to(#70e1f5));
+    background: linear-gradient(to right, #ffd194, #70e1f5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
 #container {
-    margin: 0 auto;
-    background: grey;
+    margin: 100px auto;
     width: 360px;
-  
+    background-color: #f7f7f7;
+    -webkit-box-shadow: 0 0 3px rgba(0,0,0, 0.1);
+            box-shadow: 0 0 3px rgba(0,0,0, 0.1);
+}
+
+.completed {
+    text-decoration: line-through;
+    color: grey;
+}
+
+h1 {
+    margin: 0 auto;
+    padding-left: 15px;
+    text-align: left;
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.fa-plus {
+    float: right;
+}
+
+input {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+    width: 100%;
+    border: none;
+    display: block;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    padding: 13px 13px 13px 24px;
+    color: #666;
+}
+
+input:focus {
+    background-color: #fff;
+    border: 3px solid #2980b9;
+    outline: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+
+li {
+    background-color: #ffffff;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+}
+
+li:nth-child(2n) {
+    background-color: #f7f7f7;
+}
+
+li:hover span {
+    width: 40px;
+    opacity: 1;
 }
 
 span {
-    display: none;
+    background: #e74c4c;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    color: #fff;
+    width: 0px;
+    display: inline-block;
+    transition: 0.2s linear;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -ms-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    opacity: 0;
 }
