@@ -5,20 +5,21 @@ var app = express();
 // "/bye" => "Good Bye!"
 // "/dog" => "MEOW!"
 
-app.get("/", function(req,res) {
+app.get("/", (req,res) => {
     res.send("Hi there!");
 });
 
-app.get("/bye", function(req,res) {
+app.get("/bye", (req,res) => {
     res.send("Good Bye!");
-})
+});
 
-app.get('/dog', (req, res) => {
+app.get('/dog', (req,res) => {
     res.send("MEOW!!");
+    
+    
 });
 
 //tell express to listen for requests (start server)
-app.listen(3000, function() {
+app.listen(3000, () => {
     console.log("server is connected");
-    
 });
