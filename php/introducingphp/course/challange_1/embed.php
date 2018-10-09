@@ -20,9 +20,23 @@ $characters = [
     <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<h1>Book</h1>
-<p>Description</p>
+
+<?php echo "<h1> {$book['title']} by {$book['author']}</h1>"; ?>
+
+
+<p><? echo "\"{$book['title']}\" {$book['description']}";?></p>
+
 <h2>Main Characters</h2>
+
+    <ul>
+
+        <li><?= $characters[0]; ?></li>
+        <li><?= $characters[1]; ?></li>
+        <li><?= $characters[2]; ?></li>
+        <li><?= $characters[3]; ?></li>
+        <li><?= $characters[4]; ?></li>
+
+    </ul>
 
 </body>
 </html>
