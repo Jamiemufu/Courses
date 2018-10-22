@@ -10,13 +10,10 @@
 <h1>Multiplication Table</h1>
 
 <table>
-    <tr>
-        <th>&nbsp;</th>
-        <!-- First row -->
-        <?php for ($i=1; $i <= 12 ; $i++) {echo "<th>$i</th>";}?>
-    </tr>
-    <!-- Rest of rows -->
-    <?php for ($x=1; $x < 11; $x++) {echo "<tr><th>$x</th></tr>";} ?>
+    <?php 
+    
+    ?>
+    <!-- Rest of rows -->    
 </table>
 <!-- <table>
     <tr>
