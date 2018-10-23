@@ -15,6 +15,7 @@ $characters = ['Arthur Dent', 'Ford Prefect', 'Zaphod Beeblebrox', 'Marvin', 'Sl
     <?php
     foreach ($characters as $name) {
         echo "<li>$name</li>";
+    }
     ?>
 </ul>
 <p>I particularly like Slartibartfast, the planet builder from Magrathea who won an award for his work on the fjords of Norway.</p>
