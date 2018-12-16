@@ -1,11 +1,19 @@
-function doSomeMath() {
-	var a = 5;
-	var b = 4;
-	var sum = a + b;
+function giveMeEms(pixels) {
+	var baseValue = 16;
 
-	return sum;
+	function doTheMath() {
+		return pixels/baseValue;
+	}
+
+	return doTheMath;
 }
 
-var theResult = doSomeMath();
+var smallSize = giveMeEms(12);
+var mediumSize = giveMeEms(18);
+var largeSize = giveMeEms(24);
+var xLargeSize = giveMeEms(52);
 
-console.log("The result: ", theResult);
+console.log("smallsize: ", smallSize());
+console.log("Mediumsize: ", mediumSize());
+console.log("Largesize: ", largeSize());
+console.log("XLsize: ", xLargeSize());
