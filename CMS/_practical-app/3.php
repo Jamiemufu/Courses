@@ -14,6 +14,48 @@
 
 <?php  
 
+	$string = 'I love PHP';
+
+	if ($string === 'I love PHP') 
+	{
+		echo $string;
+	}
+	else if ($string === 'PHP is shit')
+	{
+		echo 'Doesnt match noob';
+	}
+	else {
+		echo 'pwns';
+	}
+
+	for ($counter=1; $counter < 11; $counter++) 
+	{
+		echo "<br/> ". $counter;
+	}
+
+	$value = 10;
+
+	switch ($value) {
+		case '4':
+			echo 'hmmm';
+			break;
+		
+		case '2':
+			echo 'hmmm';
+			break;
+
+		case '1':
+			echo 'hmmm';
+			break;
+
+		case '5':
+			echo 'hmmm';
+			break;
+
+		case '10':
+			echo '<br/>BINGO';
+			break;
+	}
 /*  Step1: Make an if Statement with elseif and else to finally display string saying, I love PHP
 
 

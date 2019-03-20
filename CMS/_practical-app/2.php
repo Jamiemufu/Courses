@@ -17,7 +17,20 @@
 <?php
 
 
+		$number1 = 10;
+		$number2 = 20;
 
+		echo $number1 + $number2 . "<br/>";
+
+		$numArray = [$number1, $number2];
+		$numArray2 = array($number1, $number2);
+		$numArray3 = ['one' => 10, 'two' => 20];
+		
+		print_r($numArray);
+		echo "<br/>";
+		print_r($numArray2);
+		echo "<br/>";
+		print_r($numArray3['one']);
 		/* Step 1: Make 2 variables called number1 and number2 and set 1 to value 10 and the other 20:
 
 		  Step 2: Add the two variables and display the sum with echo:

@@ -17,7 +17,7 @@
 
 		<?php  
 
-
+			echo "<h1>WTF!</h1>"
 		/* 
 		   Step 1:  Use the Echo Function to say hello with html h1                  tags embedded inside php.
 
@@ -27,6 +27,7 @@
 
 
 		   */
+		  
 
 		?>
 
