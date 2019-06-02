@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vue</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         hr {
             margin: 25px 0;
@@ -12,7 +13,7 @@
     </style>
 </head>
 <body>
-
+    <!-- app 1 -->
     <div id="app-1">
         <h5>App 1</h5>
         <!-- use v-once to take initial property -->
@@ -24,7 +25,7 @@
     </div>
 
     <hr>
-
+    <!-- app 2 -->
     <div id="app-2">
         <h5>App 2</h5>
         <!-- bind click event object and call method -->
@@ -42,7 +43,7 @@
     </div>
 
     <hr>
-
+    <!-- app 3 -->
     <div id="app-3">
         <h5>App 3</h5>
         <!-- v-model directive - two way bind - update all instances of name -->
@@ -51,7 +52,7 @@
     </div>
 
     <hr>
-
+    <!-- app 4 -->
     <div id="app-4">
         <h5>App 4</h5>
         <button v-on:click="counter++">Increase</button>
@@ -63,12 +64,29 @@
     </div>
 
     <hr>
-
+    <!-- app 5 -->
     <div id="app-5">
         <h5>App 5</h5>
         <button @click="changeLink">Click to change link</button>
         <a :href="link">{{ link }}</a>
     </div>
+
+    <hr>
+    <!-- app 6 -->
+    <div id="app-6">
+        <!-- bind data property to style -->
+        <div class="demo" :style="{background: color}"></div>
+        <!-- bind computed object -->
+        <div class="demo" :style="myStyle"></div>
+        <div class="demo" :style="[myStyle, {height: width + 'px'}]"></div>
+        <hr>
+        <input type="text" v-model="color">
+        <input type="text" v-model="width">
+    </div>
+
+    <hr>
+
+
     <!-- development version, includes helpful console warnings -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="App.js"></script>

@@ -94,3 +94,20 @@ new Vue({
         }
     }
 })
+
+// sixth app
+new Vue({
+    el: '#app-6',
+    data: {
+        color: 'gray',
+        width: '100'
+    },
+    computed: {
+        myStyle: function() {
+            return {
+                background: this.color,
+                width: this.width + 'px'
+            }
+        }
+    }
+})
