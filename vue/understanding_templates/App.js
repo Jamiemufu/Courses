@@ -36,3 +36,15 @@ new Vue({
         }
     }
 })
+
+//third app
+
+new Vue({
+    el: '#app-3',
+    data: {
+        name: 'Jamie'
+    },
+    methods: {
+
+    }
+})

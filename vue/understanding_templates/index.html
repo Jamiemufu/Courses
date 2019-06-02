@@ -33,6 +33,15 @@
         <!-- add key modifier -->
         <input type="text" v-on:keyup.enter="alertMe">
     </div>
+
+    <hr>
+
+    <div id="app-3">
+        <!-- v-model directive - two way bind - update all instances of name -->
+        <input type="text" v-model="name">
+        <p>{{ name }}</p>
+    </div>
+
     <!-- development version, includes helpful console warnings -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="App.js"></script>
