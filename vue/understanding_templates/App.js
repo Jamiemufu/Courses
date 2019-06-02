@@ -38,7 +38,6 @@ new Vue({
 })
 
 //third app
-
 new Vue({
     el: '#app-3',
     data: {
@@ -46,5 +45,52 @@ new Vue({
     },
     methods: {
 
+    }
+})
+
+// fourth app
+new Vue({
+    el: '#app-4',
+    data: {
+        counter: 0,
+        secondCounter: 0
+    },
+    // execute function only when needed
+    computed: {
+        output: function() {
+            console.log('Computed');
+            return this.counter > 5 ? 'Greater 5' : 'Smaller 5';
+        }
+    },
+    //update on change
+    watch: {
+        counter: function(value) {
+            //store as variable for callback
+            var vm = this;
+            //reset after 2 seconds
+            setTimeout(function() {
+                vm.counter = 0;
+            }, 2000)
+        }
+    },
+    //excute everytime
+    methods: {
+        result: function() {
+            console.log('Method');
+            return this.counter > 5 ? 'Greater 5' : 'Smaller 5';
+        }
+    }
+})
+
+// fifth app
+new Vue({
+    el: '#app-5',
+    data: {
+        link: 'http://google.com'
+    },
+    methods: {
+        changeLink: function() {
+            this.link = 'http://apple.com'
+        }
     }
 })

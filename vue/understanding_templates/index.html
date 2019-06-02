@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vue</title>
+    <style>
+        hr {
+            margin: 25px 0;
+        }
+    </style>
 </head>
 <body>
 
     <div id="app-1">
+        <h5>App 1</h5>
         <!-- use v-once to take initial property -->
         <h1 v-once>{{ title }}</h1>
         <!-- v-bind to attributes -->
@@ -20,6 +26,7 @@
     <hr>
 
     <div id="app-2">
+        <h5>App 2</h5>
         <!-- bind click event object and call method -->
         <!-- $event is a protected name !important!! -->
         <!-- gives us access to event object in method -->
@@ -37,11 +44,31 @@
     <hr>
 
     <div id="app-3">
+        <h5>App 3</h5>
         <!-- v-model directive - two way bind - update all instances of name -->
         <input type="text" v-model="name">
         <p>{{ name }}</p>
     </div>
 
+    <hr>
+
+    <div id="app-4">
+        <h5>App 4</h5>
+        <button v-on:click="counter++">Increase</button>
+        <button v-on:click="counter--">Decrease</button>
+        <!-- computed property -->
+        <button v-on:click="secondCounter++">Increase Second</button>
+        <p>Counter: {{ counter }} | {{ secondCounter }}</p>
+        <p>Result: {{ result() }} | {{ output }}</p>
+    </div>
+
+    <hr>
+
+    <div id="app-5">
+        <h5>App 5</h5>
+        <button @click="changeLink">Click to change link</button>
+        <a :href="link">{{ link }}</a>
+    </div>
     <!-- development version, includes helpful console warnings -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="App.js"></script>
