@@ -14,6 +14,7 @@ new Vue({
     }
 });
 
+//second app
 new Vue({
     el: '#app-2',
     data: {
@@ -23,12 +24,15 @@ new Vue({
     },
     methods: {
         increase: function(num, event) {
-            return this.counter+= num;
+            this.counter+= num;
         },
         // pass in event (created default)
         updateCoords: function(event) {
             this.x = event.clientX;
             this.y = event.clientY;
+        },
+        alertMe: function() {
+            alert('Alert!');
         }
     }
 })
