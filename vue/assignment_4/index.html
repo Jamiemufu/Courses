@@ -1,4 +1,5 @@
 <script src="https://npmcdn.com/vue/dist/vue.js"></script>
+
 <link rel="stylesheet" href="styles.css">
 
 <div id="exercise">
@@ -16,19 +17,21 @@
     </div>
     <!-- 4) Let the user enter a class and enter true/ false for another class (create some example classes) and attach the classes -->
     <div>
-        <input type="text">
-        <input type="text">
-        <div></div>
+        <input type="text" v-model="secondClass">
+        <!-- bind to isHidden property -->
+        <input type="text" v-model="isHidden">
+        <!-- bind class and set property to isHidden -->
+        <div :class="[{hidden: isHidden}, secondClass]"></div>
     </div>
     <!-- 5) Repeat 3) but now with values for styles (instead of class names). Attach the respective styles.  -->
     <div>
-        <input type="text">
-        <div></div>
+        <input type="text" v-model="userStyles">
+        <div :style="userStyles"></div>
     </div>
     <!-- 6) Create a simple progress bar with setInterval and style bindings. Start it by hitting the below button. -->
     <div>
-        <button>Start Progress</button>
-        <div></div>
+        <button @click="progress">Start Progress</button>
+        <div :class="['bar']" :style="progressBar"></div>
     </div>
 </div>
 

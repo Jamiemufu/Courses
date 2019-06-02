@@ -15,7 +15,7 @@
 }
 
 .red {
-    background: red;
+    background: red !important;
 }
 
 .bold {
@@ -26,7 +26,27 @@
     text-decoration: underline;
 }
 
+.float {
+    float: right;
+}
+
+.hidden {
+    display: none;
+}
+
+.bar {
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+}
+
 .box {
     height: 50px;
     width: 50px;
+}
+
+.bigbox {
+    height: 100px;
+    width: 100px;
+    background: blue !important;
 }
