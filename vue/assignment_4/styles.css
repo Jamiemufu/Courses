@@ -1,0 +1,52 @@
+#effect {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.highlight {
+  background-color: red;
+  width: 200px !important;
+}
+
+.shrink {
+  background-color: gray;
+  width: 50px !important;
+}
+
+.red {
+    background: red !important;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.float {
+    float: right;
+}
+
+.hidden {
+    display: none;
+}
+
+.bar {
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+.box {
+    height: 50px;
+    width: 50px;
+}
+
+.bigbox {
+    height: 100px;
+    width: 100px;
+    background: blue !important;
+}
