@@ -1,0 +1,52 @@
+<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+
+<div id="app-1">
+    <!-- bind conditional to property -->
+    <!-- actually attaches/removes from DOM -->
+    <p v-if="show">You can see me! <span>Hello!</span></p>
+    <p v-else>Now you see me!</p>
+    <!-- group elements for conditionals -->
+    <template v-if="show">
+        <h1>Heading</h1>
+        <p>Inside a template</p>
+    </template>
+    <!-- just hide - not dettatch -->
+    <p v-show="show">Do you also see me?</p>
+    <!-- click event to set opposite of show -->
+    <button @click="show = !show">Toggle</button>
+</div>
+
+<hr>
+
+<div id="app-2">
+
+    <ul>
+        <!-- foreach directive -->
+        <!-- add in parenthesis and get key/index -->
+        <!-- first ele is always value, second is index -->
+        <li v-for="(item, index) in ingredients" :key="ingredient">{{ item }} ({{ index }})</li>
+    </ul>
+    <button @click="ingredients.push('spices')">Add New</button>
+    <hr>
+    <ul>
+        <!-- foreach directive for objects -->
+        <li v-for="person in persons">
+            <!-- nested for directive -->
+            <!-- with key -->
+            <!-- with iteration -->
+            <div v-for="(value, key, iteration) in person"> {{ key }}: {{ value }} ( {{ iteration }} )</div>
+        </li>
+    </ul>
+    <!-- loop through numbers -->
+    <span v-for="n in 10">{{ n }}</span>
+    <hr>
+    <!-- template tag wont get rendered -->
+    <template v-for="(item, index) in ingredients">
+        <h1>{{ item }}</h1>
+        <p>{{ index }}</p>
+    </template>
+   
+
+</div>
+
+<script src="App.js"></script>
