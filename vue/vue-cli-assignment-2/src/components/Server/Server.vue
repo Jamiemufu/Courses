@@ -1,7 +1,5 @@
 <template>
-    <li class="list-group-item"
-        @click="setServer"
-    >
+    <li class="list-group-item" @click="setServer">
         <p>Server #{{ server.id }} - {{ server.status }}</p>
     </li>    
 </template>
